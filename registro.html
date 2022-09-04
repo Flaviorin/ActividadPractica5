@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" type="image/jpg" href="imagenes/sopa.jpg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <title>La Cocina de Flavio</title>
+    
+    </head>
+    <body>
+        <header>
+            <!-- Encabezado, para comentar control+K+C -->
+           <nav>
+               <br>
+                <a class="nav" href="./index.html">Home</a>
+                <a class="nav" href="./acerca.html">Acerca de</a>
+                <a class="nav" href="./contacto.html">Contacto</a>
+                <a class="nav" href="./registro.html">Regístrese</a>
+                <a class="nav" href="./sucursales.html">Sucursales</a>
+                <a class="nav" href="./NuestrosClientes.html">Nuestros Clientes</a>
+            </nav>
+            <br>
+            <h1 class="animate__animated animate__bounce">La cocina de Flavio</h1>
+            <br>
+        </header>
+    <menu>
+		<Form action="show_data.html" target="_blank" class="formulario">
+		<!-- <Form action="{{ url_for('show_data') }}" target="_blank">-->
+            <h2>Formulario de registro</h2>
+            <br>
+            <fieldset class="fieldset-auto-width">
+                <legend>Datos personales</legend>
+                <Label for="firstname">Nombre: </Label> <Input Type="text" id="name" name="Nombre" placeholder="Ingrese su nombre aquí..." required pattern="[A-Za-z\s\p{L}]{3,15}" title="Nombre entre 3 y 15 caracteres alfabéticos"> 
+                <Label for="lastname">Apellido: </Label> <Input Type="text" name="Apellido" placeholder="Ingrese su apellido aquí..." required pattern="[A-Za-z\s\p{L}]{3,15}" title="Apellido entre 3 y 15 caracteres alfabéticos"> <br><br>
+                <Label for="birthdate">Fecha de Nacimiento (dd/mm/aaaa): </Label> <Input Type="date" name="F.Nacimiento">
+                <p>Género:
+                    <Input Type="radio" name="Género" value="Hombre" checked> Hombre
+                    <Input Type="radio" name="Género" value="Mujer"> Mujer
+                    <Input Type="radio" name="Género" value="Otro"> Otro
+                </p>
+            </fieldset><br><br>
+            <fieldset class="fieldset-auto-width">
+                <legend>Domicilio</legend>
+                <Label for="street">Calle: </Label><Input Type="text" name="Calle" placeholder="Ingrese su dirección aquí..." pattern=".{4,}" title="Calle de 4 o más caracteres"><br>
+                <Label for="nrstreet">Número: </Label><Input Type="text" name="Nro.Calle" placeholder="Ingrese número aquí..."><br>
+                <Label for="city">Ciudad: </Label> <Input Type="text" name="Ciudad" value="C.A.B.A.">
+                <Label for="zipcode">Código Postal: </Label> <Input Type="text" name="C.Postal" placeholder="Ingrese su código postal aquí...">
+            </fieldset><br><br>
+            <fieldset class="fieldset-auto-width">
+                <legend>Datos de contacto</legend>            
+                <Label for="telephone">Nro. Teléfono: </Label> <Input Type="tel" id="telefono" name="Nro.Teléfono" placeholder="Ingrese su teléfono aquí..." pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" title="Teléfono en formato 012-3456-7890"><br>
+                <Label for="email">E-Mail: </Label> <Input Type="email" name="E.Mail" placeholder="Ingrese su e-mail aquí..." required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Debe ingresar caracteres alfanúmericos seguidos por un @(arroba), luego deben seguir más caracteres, y un &quot;.&quot;(punto), luego seguido por al menos 2 letras de la &quot;a&quot; a la &quot;z&quot;."><br>
+                <Label for="clave">Clave: </Label> <Input Type="password" name="Clave" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Clave debe contener al menos un número, una letra minúscula y una mayúscula, y al menos 8 caracteres">
+            </fieldset><br><br>
+            <fieldset class="fieldset-auto-width">
+                <legend>Información adicional</legend>  
+                <Label for="link">Link del TP3: </Label> <Input Type="url" name="Link.TP3" pattern="https?://.+" title="Incluye http://"> <br>
+                <p>Conocimientos previos: <br>
+                    <Input Type="checkbox" name="Conocimientos" value="HTML"> HTML
+                    <Input Type="checkbox" name="Conocimientos" value="CSS"> CSS
+                    <Input Type="checkbox" name="Conocimientos" value="Bootstrap"> Bootstrap
+                    <Input Type="checkbox" name="Conocimientos" value="Javascript"> Javascript
+                    <Input Type="checkbox" name="Conocimientos" value="Python"> Python
+                </p>
+                <label>Estudios:
+                    <select name="Estudios">
+                        <option value="Primarios" name="Estudios" >Primarios</option>
+                        <option value="Secundarios" name="Estudios">Secundarios</option>
+                        <option value="Terciarios" name="Estudios">Terciarios</option>
+                        <option value="Universitarios" name="Estudios">Universitarios</option>
+                        <option value="Otros" name="Estudios" selected>Otros</option>
+                        <!-- Al poner selected lo deja seleccionado por defecto. -->
+                    </select>
+                </label>
+            </fieldset>
+            <br><br>
+            <p>Comentario: </p>
+            <textarea name="Comentario" rows="5" cols="50" placeholder="Escribe tu comentario..."></textarea><br><br>
+			<Input Type="submit" value="Enviar" class="enviar">
+            <input type="reset" value="Borrar" class="enviar"> 
+		</Form>
+		<p>Si usted hace click en el botón "Enviar", la información será enviada a la página "show_data.html".</p>
+        <br><br>
+        <br><br>
+        <br><br>
+    </menu>
+    <footer>
+        <a class="redsoc" href="https://www.twitter.com" tarjet="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a class="redsoc" href="https://www.facebook.com" tarjet="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a class="redsoc" href="https://www.pinterest" tarjet="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+        <a class="redsoc" href="https://www.instagram.com" tarjet="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a class="redsoc" href="https://www.linkedin.com" tarjet="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a class="redsoc" href="https://github.com/" tarjet="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <br>
+        <h6>Derechos reservados @2022</h6>
+        <br>
+    </footer>
+</body>
+</html>

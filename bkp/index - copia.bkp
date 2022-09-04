@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/jpg" href="imagenes/sopa.jpg">
+    <title>La Cocina de Flavio</title>
+
+</head>
+<body>
+    <header>
+        <!-- Encabezado, para comentar control+K+C -->
+       <nav>
+           <br>
+            <a class="nav" href="./index.html">Home</a>
+            <a class="nav" href="./acerca.html">Acerca de</a>
+            <a class="nav" href="./contacto.html">Contacto</a>
+            <a class="nav" href="./registro.html">Regístrese</a>
+            <a class="nav" href="./sucursales.html">Sucursales</a>
+            <a class="nav" href="./NuestrosClientes.html">Nuestros Clientes</a>
+        </nav>
+        <br>
+        <h1>La cocina de Flavio</h1>
+        <br>
+    </header>
+    <main>
+        <h3>Sopa de espárragos</h3>
+        <img class="imgindex" src="imagenes/como_hacer_sopa_de_esparragos_25597_600.jpg" alt="Sopa de espárragos">
+        <br><br>
+        <a class="nav" href="./receta.html" class="receta">Receta</a>
+        <br>
+    </main>
+
+    <footer>
+        <a class="redsoc" href="https://www.twitter.com" tarjet="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a class="redsoc" href="https://www.facebook.com" tarjet="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a class="redsoc" href="https://www.pinterest" tarjet="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+        <a class="redsoc" href="https://www.instagram.com" tarjet="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a class="redsoc" href="https://www.linkedin.com" tarjet="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a class="redsoc" href="https://github.com/" tarjet="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <br>
+        <h6>Derechos reservados @2022</h6>
+        <br>
+    </footer>
+</body>
+</html>

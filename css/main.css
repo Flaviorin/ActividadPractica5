@@ -1,0 +1,187 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 3vw;
+
+}
+header{
+    background-color: black;
+    color: white;
+    width: 100%;
+    /* left: 0; */
+}
+.nav{
+    background-color: gray;
+    color: white;
+    /* Le da forma a la caja que los contiene a los links */
+    border-radius: 5px;
+    margin: 0.3%; /* 5px */
+    padding: 0.3%; /* 5px */
+    /* text-decoration: none = es para saca la barrita de subrayado de los links 
+    de la barra de navegacion */
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* padding: 20px; */
+    height: 50px;
+    font-size: 20px;
+    margin-top: 0;  /* 10px */
+    clear: both;
+}
+
+/* redes socuales */
+
+.redsoc{
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;   /* centrar los iconos */
+}
+
+.redsoc a {
+    color: #000000;   /* color de los iconos */
+    margin: 0px 6px;    /* espacio entre los iconos */
+    font-size: 2vw;     /* 20px tamaño */
+}
+
+.redsoc a:hover {
+    color: #999999;   /* Color de los iconos al pasar el raton */
+}
+
+/* Fin redes sociales */
+
+/* .enviar{
+    background-color: gray;
+    color: white; */
+    /* Le da forma a la caja que los contiene a los links */
+    /* border-radius: 5px;
+    border-color: white;
+    margin: 5px;
+    padding: 5px; */
+    /* text-decoration: none = es para saca la barrita de subrayado de los links 
+    de la barra de navegacion */
+    /* text-decoration: none;
+} */
+
+.align-left{
+    text-align: left;
+}
+
+h4{
+    text-align: center;
+}
+h3{
+    font-size: 2vw;
+}
+
+table, th, td {
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgindex,.imgabout{
+    /* width: 40%; */
+    display:block;
+    /* width: 250px; */
+    margin-left: auto;
+    margin-right: auto;
+    /* height: auto; */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.fieldset-auto-width {
+    /* display: inline-block; */
+    border-radius: 12px
+}
+
+fieldset{
+    padding: 10px;
+}
+
+/* Estilos para las imagenes de los clientes */
+.fila-imagen-cliente{
+    box-sizing: border-box;
+    /* margin-left: 0.5%; */
+}
+
+.imgcliente {        
+    margin-left:25px;
+    margin-right:25px;
+    margin-top: 25px;
+    width: 300px;
+    height: 200px;
+}
+
+/* Fin de estilos para imagenes de los clientes */
+
+/* Estilos a Formularios  */
+
+label, input{
+    font-size: 1.0vw;
+    padding-left:10px;
+}
+input[type=text],input[type=password],
+input[type=email],
+input[type=number],input[type=url],
+input[type=tel],
+input[type=textarea], select{
+    width: 80%;
+    padding: 1vw;   /* 12px 20px; */
+    margin: 1vw;    /* 8px 0; */
+    display: inline-block;
+    border: 1vw;    /* ipx solid #ccc; */
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+input[type=radio],input[type=checkbox],input[type=date] {
+    /* width: 80%; */
+    padding: 1vw;
+    margin: 1vw;  
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+
+input[type=submit],input[type=reset] {
+    width: 49.5%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover {
+    background-color: #4caf49;
+}
+
+.formulario{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 2%;
+    margin: 1% 20%;
+}
+
+textarea{
+    width: 60%;
+}
